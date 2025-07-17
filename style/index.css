@@ -1,0 +1,275 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+ 
+
+.work-sans-font {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:400;
+  font-style: normal;
+}
+.display-flex{
+    display: flex;
+}
+.navbar{
+  justify-content: space-between;
+  align-items:center;
+}
+.nav-link {
+    font-size:1rem;
+ 
+}
+  .brand{
+    font-weight:700;
+    font-size:3rem;
+  }
+.nav-item
+{
+  list-style: none; 
+  margin-right: 30px;   
+}
+.nav-link{
+    text-decoration: none;
+}
+
+/*color*/
+.dark-1{
+    color:#131313;
+}
+.dark-2{
+    color:#424242;
+}
+.dark-3{
+    color:#727272;
+}
+ .f-color{
+    color:#FF900E;
+ }
+.bg-color{
+    background-color: rgba(255, 144, 14, 0.1);
+    
+}
+/*buttom*/
+.btn-primary{
+padding:20px 25px;
+background-color: #FF900E;
+border:none;
+border-radius: 8px;
+color:white;
+font-size:1.25rem;
+font-weight:600;
+cursor:pointer;
+}
+.navbar,.banner{
+    max-width:1440px;
+    margin:0 auto;
+
+}
+.banner-title{
+    font-weight:700;
+    font-size:4rem;
+}
+.banner-content{
+max-width:850px;
+margin:0 auto;
+text-align:center;
+margin-bottom: 50px;
+}
+
+main > section{
+  margin-top:130px;
+}
+
+/*image part*/
+.banner-image{
+    width:100%;
+}
+.team-img{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:24px;
+}
+.feature-title{
+  padding-left: 21px;
+    border-left:5px solid  #FF900E;
+}
+.feature{
+    gap:130px;
+  
+}
+.left{
+    max-width:585px;
+    height:980px;
+}
+.right{
+    max-width:800px;
+    height:1060px;
+    margin-top: 40px;
+}
+ .right img{
+    width:100%;
+   
+ }
+.card-title{
+    font-size:1.25rem;
+    font-weight:600; 
+  
+}
+.btn-clr{
+    color:white;
+    padding: 40px;
+    margin-top:-100px;
+    margin-left: -80px;
+}
+.feature-card{
+  padding:10px;
+    box-shadow:0 4px 30px 0 rgba(0, 0, 0, 0.06);
+  margin-bottom:20px;
+  border-radius:8px;
+}
+.our-features{
+    margin-left:130px;
+    max-width:530px;
+}
+.teams{
+    align-items: center;
+}
+
+.feature-content{
+    font-size:3rem;
+    font-weight:700;
+}
+.p-font{
+    font-size:1rem;
+}
+.normal-font{
+    font-weight:500;
+}
+
+.fact{
+    border:1px solid #FF900E;
+     width:240px;
+    height:240px;
+    border-radius:8px;
+    justify-content: center;
+    align-items: center;
+}
+.facts-card{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-top:100px;
+   
+}
+.fact-number{
+    font-size:2.8rem;
+    font-weight:600;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.fact-name{
+    font-size:1.25rem;
+    font-weight:600;
+    margin-top:10px;
+}
+.fact-description{
+    max-width:540px;
+    font-size:1.12rem;
+
+}
+.sponsor-info{
+    max-width:540px;
+    height:130px;
+    margin:50px auto;
+}
+.bold{
+    color:#131313;
+    font-size:2.8rem;
+    font-weight:700;
+}
+.sponsor-companies{
+ display: grid;
+ grid-template-columns: repeat(5,1fr);
+}
+.sponsor-companies img{
+    filter:grayscale(100%);
+}
+
+
+footer{
+   max-width:1440px;
+   height:100px;
+   background-color: #FFF4E7;
+   margin: 100px auto;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+   border-radius: 10px;
+}
+@media screen and (max-width:576px) {
+    .navbar,
+    .nav-links,
+    .teams,
+    .feature
+    
+    {
+        flex-direction: column;
+    }
+    .team-img,
+    .facts-card,
+    .sponsor-companies{
+grid-template-columns: repeat(1,1fr);
+}
+.facts-card,.sponsor-companies{
+    justify-items: center;
+    gap:24px;
+}
+.our-features{
+    margin-left:20px;
+
+}
+.right img{
+     margin-top: 20px;
+}
+.fact-part{
+    margin-top:-300px;
+}
+.btn-clr{
+    margin-top:20px;
+    margin-left:20px;
+}
+    
+}
+
+ /*medium size*/
+ @media screen and (min-width:576px) and (max-width:992px) {
+    .teams ,
+    .feature{
+        flex-direction:column;
+    }
+    .our-features{
+    
+        margin:50px auto;
+    }
+    .sponsor-companies,
+    .facts-card ,
+    .feature{
+        grid-template-columns: repeat(2,1fr);
+        gap:50px;
+        justify-items: center;
+    }
+    .feature{
+        grid-template-columns: repeat(1,1fr);
+       
+    
+ } 
+.btn-clr{
+    margin-top:20px;
+    margin-left:20px;
+}
+.fact-part{
+    margin-top:300px;
+ 
+}
+ 
+}
